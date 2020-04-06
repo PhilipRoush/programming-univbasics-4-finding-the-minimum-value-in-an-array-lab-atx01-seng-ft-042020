@@ -1,8 +1,8 @@
 def find_min_value(scale)
   count = 0
-  min_value = 5
+  min_value = scale.max
   while count < scale.length do
-    if min_value > scale[count]
+    if min_value < scale[count]
       min_value = scale[count]
     end
     count += 1
